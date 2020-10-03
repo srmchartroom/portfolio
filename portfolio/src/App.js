@@ -1,43 +1,59 @@
+//? importing React dependencies
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//? importing portfolio pages here
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//? importing style dependencies
+import "./Sass/base/App.scss";
+
+//? importing component dependencies
+import Header from "./components/Header";
+
+//? importing page dependencies
 import Home from "./pages/Home";
-//TODO import About from "./pages/About";
-//TODO import Contact from "./pages/Contact";
-//TODO import Portfolio from "./pages/Portfolio"
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio"
 
-//TODO import Testimonials from "./components/Testimonials";
-//TODO import ExecutiveSummary from "./components/ExecutiveSummary";
-//TODO import Career from "./components/Career";
-//TODO import NextSteps from "./components/NextSteps";
-
-// // import Detail from "./pages/Detail";
+// import Testimonials from "./components/Testimonials";
+// import ExecutiveSummary from "./components/ExecutiveSummary";
+// import Career from "./components/Career";
+// import NextSteps from "./components/NextSteps";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
-import { StoreProvider } from "./utils/GlobalState";
-//// import FavoritesList from "./pages/FavoritesList";
+// import { StoreProvider } from "./utils/GlobalState";
 
 function App() {
   return (
     <Router>
-      <div>
-        <StoreProvider>
-          <Nav />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/home" component={Home} />
-            {/* //TODO <Route exact path="/about" component={About} /> */}
-            {/* //TODO <Route exact path="/contact" component={Contact} /> */}
-            {/* //TODO <Route exact path="/portfolio" component={Portfolio} /> */}
-
-            {/* //// <Route exact path="/favorites" component={FavoritesList} /> */}
-            {/* //// <Route exact path="/posts/:id" component={Detail} /> */}
-            <Route component={NoMatch} />
-          </Switch>
-        </StoreProvider>
+      {/* <StoreProvider> */}
+      <div className='App'>
+        <Header />
+        <div className='container'>
+          <div className='wrapper'>
+            <div className='home'>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/portfolio" component={Portfolio} />
+                <Route component={NoMatch} />
+              </Switch>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* </StoreProvider> */}
     </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+

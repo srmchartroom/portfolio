@@ -1,21 +1,19 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid";
-import CreatePostForm from "../components/CreatePostForm";
-import PostsList from "../components/PostsList";
+// import Container from "../../components/Container"
+// import Nav from "../components/Nav";
 
-const Home = () => {
-  return (
-    <Container fluid>
-      <Row>
-        <Col size="md-6">
-          {/* <CreatePostForm /> */}
-        </Col>
-        <Col size="md-6 sm-12">
-          {/* <PostsList /> */}
-        </Col>
-      </Row>
-    </Container>
-  );
-};
+
+function Home() {
+    return (
+        <div className='container'>
+            <div className='wrapper'>
+                <h5>Meet Sean McGinnis.</h5>
+                <h6>(Far from just another developer.)
+                </h6>
+            </div>
+        </div>
+    );
+}
+
 
 export default Home;

@@ -1,0 +1,54 @@
+body {
+    /*   background-color: #cb9805; */
+      font-family: "Comfortaa", sans-serif;
+      height: 200vh;
+      
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    #hitTarget {
+        border: 1px #c80000 solid;
+        border-radius: 75;
+        background-color: #c80000;
+    }        
+
+    .box {
+      display: block;
+      position: fixed;
+      background-color: #c80000;
+      border-radius: 10px;
+    /*   height: 283vmax;
+      width: 283vmax; */
+      top: 0;
+      left: 0;
+      border-radius: 100%;
+      transform: scale(0, 0);
+      
+    /*   opacity: 0.3;
+      mix-blend-mode: multiply; */
+    }
+    
+    #box-1 {
+      background: red;
+    }
+    
+    #box-2 {
+      background: blue;
+    }
+    
+    #box-3 {
+      background: orange;
+    }
+    
+    #box-4 {
+      background: green;
+    }
+    
+    #box-5 {
+      background: purple;
+    }
+    
+    #box-6 {
+      background: pink;
+    }
