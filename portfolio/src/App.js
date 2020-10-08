@@ -27,23 +27,18 @@ function App() {
       {/* <StoreProvider> */}
       <div className='App'>
         <Header />
-        <div className='container'>
-          <div className='wrapper'>
-            <div className='home'>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/portfolio" component={Portfolio} />
-                <Route component={NoMatch} />
-              </Switch>
-            </div>
-          </div>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
+
       {/* </StoreProvider> */}
-    </Router>
+    </Router >
   );
 }
 

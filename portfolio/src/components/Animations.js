@@ -70,6 +70,65 @@ export const handleHoverExit = e => {
     });
 };
 
+
+
+
+
+//! //////////////////////////////////////////////////////
+
+//HOVER ON LINK
+export const handleHoverSub = e => {
+    gsap.to(e.target, {
+        duration: 0.1,
+        y: -6,
+        skewY: 2,
+        skewX: 8,
+        X: 4,
+        z: 4,
+        ease: "power3.inOut"
+    });
+};
+
+//HOVER OFF LINK
+export const handleHoverSubExit = e => {
+    gsap.to(e.target, {
+        duration: 0.4,
+        y: 0,
+        skewY: 0,
+        skewX: 0,
+        X: 0,
+        Z: 0,
+        ease: "power3.inOut"
+    });
+};
+
+
+//! //////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // adds subnav image once you hover on
 export const handleSubnav = (city, target) => {
     gsap.to(target, {

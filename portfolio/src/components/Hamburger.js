@@ -16,15 +16,13 @@ import {
 import development from "../images/dallas.webp";
 import design from "../images/austin.webp";
 import experience from "../images/newyork.webp";
-import skills from "../images/sanfrancisco.webp";
-import clients from "../images/beijing.webp";
+// import skills from "../images/sanfrancisco.webp";
+// import clients from "../images/beijing.webp";
 
 const subnav = [
     { name: "Development", image: development },
     { name: "Design", image: design },
-    { name: "Experience", image: experience },
-    { name: "Skills/Competencies", image: skills },
-    { name: "Clients/Testimonials", image: clients },
+    { name: "Etc.", image: experience },
 ];
 
 const Hamburger = ({ state }) => {
@@ -69,7 +67,7 @@ const Hamburger = ({ state }) => {
             <div ref={el => (reveal1 = el)} className='menu-secondary-background-color'></div>
             <div ref={el => (reveal2 = el)} className='menu-layer'>
                 <div ref={el => (subnavBackground = el)} className='menu-subnav-background'></div>
-                <div className='container'>
+                <div className='container-main'>
                     <div className='wrapper'>
                         <div className='menu-links'>
                             <nav>

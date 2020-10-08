@@ -53,7 +53,7 @@ const Header = ({ history }) => {
 
     return (
         <header>
-            <div className="container">
+            <div className="container-main">
                 <div className="wrapper">
                     <div className="inner-header">
                         <div className="logo">
